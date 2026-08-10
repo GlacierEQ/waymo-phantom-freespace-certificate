@@ -1,0 +1,31 @@
+{
+  "schema": "glaciereq.proof-receipt.v1",
+  "repository": "GlacierEQ/waymo-phantom-freespace-certificate",
+  "source_sha": "cb95eaa22852998bbbcf03fadebc0f418a8f0dcaed093c13bf6e4a4015756109",
+  "proof_id": "elite-waymo-phantom-freespace-certificate-1786335149",
+  "environment": {
+    "python": "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python",
+    "PYTHONPATH": "/Users/kcbflux/job-app/repos/waymo-phantom-freespace-certificate:/Users/kcbflux/job-app/repos/waymo-phantom-freespace-certificate/src",
+    "entry": "unittest"
+  },
+  "tests": [
+    "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python -m unittest discover -s tests -v (x2)"
+  ],
+  "adversarial_tests": [
+    "tests/test_adversarial.py"
+  ],
+  "runtime": {
+    "operate": "scripts/operate.py (x2)",
+    "dual_run_ok": true,
+    "proof_dual_run_ok": true
+  },
+  "result": "PASS",
+  "limitations": [
+    "not production deployed",
+    "reference implementation only"
+  ],
+  "timestamp": "2026-08-10T04:12Z",
+  "artifact_hashes": {
+    "operability_receipt": "bbb0983efa5f4ac0b8cc3c5dcad1a0c9e8a91848826daafed5b14c1eeb8e67cd"
+  }
+}

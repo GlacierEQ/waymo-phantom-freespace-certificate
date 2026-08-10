@@ -1,0 +1,24 @@
+{
+  "schema": "glaciereq.operability-receipt.v1",
+  "repository": "GlacierEQ/waymo-phantom-freespace-certificate",
+  "at": "2026-08-10T04:12Z",
+  "source_sha": "cb95eaa22852998bbbcf03fadebc0f418a8f0dcaed093c13bf6e4a4015756109",
+  "entry": "scripts/operate.py",
+  "primary_output": {
+    "module": "freespace",
+    "ok": true,
+    "repository": "GlacierEQ/waymo-phantom-freespace-certificate",
+    "smoke": {
+      "args": [
+        "{'elite': True, 'n': 1}"
+      ],
+      "content_checked": true,
+      "invoked": true,
+      "kind": "fn",
+      "name": "digest",
+      "result": "0540cf30b3be558aaf2c1fe8e7962db3939844e3557f203179a6393959aa103b"
+    }
+  },
+  "dual_run_ok": true,
+  "result": "PASS"
+}

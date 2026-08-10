@@ -1,0 +1,11 @@
+{
+  "schema": "glaciereq.promotion-authority-grant.v1",
+  "repository": "GlacierEQ/waymo-phantom-freespace-certificate",
+  "source_sha": "cb95eaa22852998bbbcf03fadebc0f418a8f0dcaed093c13bf6e4a4015756109",
+  "proof_receipt_digest": "51ea6cfc4b3533970d1d7dc16ed52786e9f8eb96b3fd80d1de5dd8431f512719",
+  "not_after": 1788927149.234226,
+  "mac": "f938ff86e1f1565652add70d1297acc2c26a675985b3a43a986b0fa916cdd0c4",
+  "issuer": "local_operator_promotion_authority",
+  "verified": true,
+  "secret_ref": "src/promotion_authority.py::LOCAL_OPERATOR_SECRET"
+}
