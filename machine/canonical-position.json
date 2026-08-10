@@ -1,0 +1,33 @@
+{
+  "schema": "glaciereq.canonical-position.v1",
+  "repository": "GlacierEQ/waymo-phantom-freespace-certificate",
+  "role": "CANONICAL_SPECIALIST",
+  "owns": "evidence_bound_whole_grid_freespace_certification",
+  "mechanism": {
+    "input": "non-empty rectangular grid of bounded free/occupied evidence masses",
+    "classification": ["FREE", "OCCUPIED", "UNKNOWN"],
+    "certificate_vetoes": ["any OCCUPIED cell", "unknown ratio above configured ceiling"],
+    "receipt_binding": ["exact evidence grid", "exact certifier policy", "classified grid", "ratios", "terminal reason"]
+  },
+  "does_not_own": [
+    "sensor provenance authentication",
+    "real-world drivable geometry beyond supplied evidence",
+    "trajectory or path-planning authority",
+    "autonomous-driving actuation authority",
+    "uncertainty lane-graph construction",
+    "Waymo affiliation or adoption"
+  ],
+  "relationships": [
+    {
+      "repository": "GlacierEQ/waymo-uncertainty-lane-graph",
+      "relationship": "complementary uncertainty-topology specialist",
+      "integration_exercised": false
+    }
+  ],
+  "proof": {
+    "source_sha": "feee6e51999ea391bd8793a77f2576c21b6464bc",
+    "workflow_run_id": 31403184766,
+    "jobs": ["py", "c"],
+    "result": "PASS"
+  }
+}

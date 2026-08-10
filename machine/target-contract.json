@@ -5,18 +5,36 @@
     "family": "elite-estate"
   },
   "current": {
-    "state": "PROMOTED",
+    "state": "EVOLVING",
     "implemented": true,
     "tested": true,
-    "deployed": false
+    "deployed": false,
+    "canonical_position_resolved": true,
+    "exact_head_proof": {
+      "source_sha": "feee6e51999ea391bd8793a77f2576c21b6464bc",
+      "workflow_run_id": 31403184766,
+      "jobs": ["py", "c"],
+      "result": "PASS"
+    }
+  },
+  "canonical_role": "evidence_bound_whole_grid_freespace_certification",
+  "promotion": {
+    "canonical_gate": "PASS",
+    "next_state": "EVOLVING",
+    "next_cursor": "add_region_scoped_certificates_and_sensor_provenance_attestation"
   },
   "nonclaims": [
     "no employer affiliation",
-    "no production deployment without receipt"
+    "no production deployment",
+    "no autonomous-driving or trajectory authority",
+    "no sensor provenance authentication",
+    "no real-world drivable geometry proof beyond supplied evidence",
+    "no sibling integration without executable composition proof"
   ],
   "donor_plan": {
-    "mode": "none",
-    "donors": []
+    "mode": "preserve-separate-specialists",
+    "donors": [],
+    "siblings": ["GlacierEQ/waymo-uncertainty-lane-graph"]
   },
-  "frozen_at": "2026-08-10T04:12Z"
+  "frozen_at": "2026-08-10T15:24:00Z"
 }
