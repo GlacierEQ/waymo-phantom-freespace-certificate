@@ -1,1 +1,21 @@
-{"capabilities": ["hyper-scaling"]}
+{
+  "schema": "glaciereq.capability-surface.v1",
+  "repository": "GlacierEQ/waymo-phantom-freespace-certificate",
+  "capabilities": [
+    "bounded_grid_evidence_validation",
+    "free_occupied_unknown_cell_classification",
+    "occupied_cell_certificate_veto",
+    "unknown_ratio_certificate_ceiling",
+    "exact_grid_evidence_fingerprint",
+    "certifier_policy_fingerprint",
+    "deterministic_freespace_certificate_receipt",
+    "python_c_certificate_outcome_parity"
+  ],
+  "truth_boundary": "The repository certifies only the supplied bounded grid under its explicit policy. It does not authenticate sensor provenance, prove real-world drivable geometry beyond supplied evidence, authorize autonomous driving, plan trajectories, or establish Waymo affiliation/adoption.",
+  "relationship_boundary": {
+    "GlacierEQ/waymo-uncertainty-lane-graph": {
+      "relationship": "complementary uncertainty-topology specialist",
+      "integration_exercised": false
+    }
+  }
+}
