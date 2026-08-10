@@ -1,0 +1,28 @@
+{
+  "schema": "glaciereq.canonical-position-proof.v1",
+  "repository": "GlacierEQ/waymo-phantom-freespace-certificate",
+  "source_sha": "feee6e51999ea391bd8793a77f2576c21b6464bc",
+  "workflow": {
+    "name": "tests",
+    "run_id": 31403184766,
+    "conclusion": "success",
+    "jobs": ["py", "c"]
+  },
+  "verified_invariants": [
+    "unknown cells are never promoted to FREE",
+    "any occupied cell refuses the whole-grid freespace certificate",
+    "unknown ratio above policy refuses the certificate",
+    "empty and ragged grids fail closed",
+    "non-finite and out-of-range evidence masses fail closed",
+    "non-finite and out-of-range certifier policy fails closed",
+    "certificate fingerprint binds exact evidence and exact policy",
+    "Python and native C agree on occupied and unknown refusal outcomes"
+  ],
+  "claim_ceiling": "independent_reference_bounded_grid_freespace_certificate",
+  "nonclaims": [
+    "no autonomous-driving authority",
+    "no sensor provenance authentication",
+    "no real-world geometry proof beyond supplied evidence",
+    "no Waymo affiliation or adoption"
+  ]
+}
