@@ -1,7 +1,7 @@
 {
-  "schema": "glaciereq.canonical-position.v1",
+  "schema": "glaciereq.apex-position.v1",
   "repository": "GlacierEQ/waymo-phantom-freespace-certificate",
-  "role": "CANONICAL_SPECIALIST",
+  "role": "APEX_SPECIALIST",
   "owns": "evidence_bound_whole_grid_freespace_certification",
   "mechanism": {
     "input": "non-empty rectangular grid of bounded free/occupied evidence masses",

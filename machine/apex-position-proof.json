@@ -1,5 +1,5 @@
 {
-  "schema": "glaciereq.canonical-position-proof.v1",
+  "schema": "glaciereq.apex-position-proof.v1",
   "repository": "GlacierEQ/waymo-phantom-freespace-certificate",
   "source_sha": "feee6e51999ea391bd8793a77f2576c21b6464bc",
   "workflow": {
